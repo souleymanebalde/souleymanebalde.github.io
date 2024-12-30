@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="../Resources/CSS/home.css">
+    <link rel="stylesheet" href="../Resources/CSS/dashboard.css">
+
+</head>
+<body>
+
+<header>
+    <!-- Logo -->
+    <div class="logo">
+        <a href="home.html"><img src="../Resources/Images/logo.png" alt="Logo"> </a>
+    </div>
+    <!-- Barre de navigation -->
+    <div class="navigation">
+    <nav>
+        <a href="home.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="documentation.html">Documentation</a>
+        <a href="login.html">Mon profil</a>
+    </nav>
+</div>
+</header>
+
+<main>
+    <section id="dashboard">
+        <h1>Bienvenue dans le Dashboard</h1>
+        <!-- Rectangle pour résoudre un problème -->
+        <div class="solve-vrp">
+            <button id="solve-btn" class="btn-large">Résoudre un problème de VRP</button>
+        </div>
+
+        <!-- Options affichées après clic -->
+        <div id="vrp-options" class="hidden">
+            <h2>Options de résolution</h2>
+            <form action="results.html">
+                <!-- Choix du problème -->
+                <label for="problem-type">Choix du problème :</label>
+                <select id="problem-type" name="problem-type" required>
+                    <option value="CVRP">CVRP</option>
+                    <option value="VRPTW">VRPTW</option>
+                    <option value="DVRP">DVRP</option>
+                </select>
+
+                <!-- Choix de la base de données -->
+                <label for="database">Choix de la base de données :</label>
+                <select id="database" name="database" required>
+                    <option value="real_data">Données réels</option>
+                    <option value="Solomon">Solomon</option>
+                    <option value="CVRPLib">CVRPLib</option>
+                </select>
+
+                <!-- Choix de la méthode de résolution -->
+                <label for="method">Choix de la méthode de résolution :</label>
+                <select id="method" name="method" required>
+                    <option value="exact">Méthode exacte</option>
+                    <option value="metaheuristic">Métaheuristique</option>
+                </select>
+
+                <button type="submit" class="btn">Résoudre</button>
+            </form>
+        </div>
+        
+    </section>
+</main>
+
+<!-- <script src="script.js"></script>-->
+</body>
+</html>
+
+<!--
+<p>
+            Définition des Données et des Paramètres : Développement d'une interface utilisateur 
+permettant de définir les paramètres de routage, tels que : Points de départ et 
+d'arrivée, Contraintes spécifiques (temps, coûts, capacités).
+- Alimentation de la Base de Données des Algorithmes : Création d'une interface 
+permettant l'importation et la gestion des données nécessaires au bon 
+fonctionnement des algorithmes. Cette interface devra inclure des mécanismes de 
+validation des données pour garantir leur cohérence.
+- Choix et Exécution des Algorithmes : Mise en place d'une interface permettant à 
+l'utilisateur de sélectionner un algorithme adapté parmi une liste, de configurer ses 
+paramètres, et de lancer son exécution.
+- Affichage des Résultats : Développement de modules d'affichage des résultats sous 
+forme de : Tableaux synthétiques pour une vue tabulaire des données. Cartes 
+géographiques interactives pour une visualisation visuelle et intuitive des itinéraires
+        </p>
+-->
+

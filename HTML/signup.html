@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un compte</title>
+    <link rel="stylesheet" href="../Resources/CSS/signup.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <a href="home.html"><img src="../Resources/Images/logo.png" alt="Logo"> </a>    </div>
+</header>
+
+<main>
+    <section id="signup">
+        <h1>Créer un compte</h1>
+        <form action="login.html" method="post">
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="profil">Profil :</label>
+            <select id="profil" name="profil"  required>
+                <option value="chercheur">Chercheur</option>
+                <option value="industriel">Industriel</option>
+                <option value="utilisateur libre">Utilisateur libre</option>
+            </select>
+
+            <label for="password">Mot de passe :</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirmer le mot de passe :</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <button type="submit" class="btn">Créer un compte</button>
+        </form>
+        <p>Déjà un compte ? <a href="login.html">Se connecter</a></p>
+    </section>
+</main>
+
+</body>
+</html>

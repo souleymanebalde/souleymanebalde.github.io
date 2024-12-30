@@ -1,0 +1,75 @@
+/* Styles de base */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+     /* Centrage global */
+}
+
+header {
+    padding: 20px 0;
+    background-color: white ;
+    color: blue;
+    display: flex;
+    left: 15px;
+}
+
+/* Style du logo */
+.logo img {
+    height: 60px; /* Taille du logo */
+    display: flex;
+    margin: 0 auto; /* Centrer l'image */
+}
+
+/* Barre de navigation */
+nav {
+    margin-top: 10px; /* Espacement entre le logo et la barre de navigation */
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px; /* Espacement horizontal entre les liens */
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.taxonomy {
+    display: block;
+    
+    margin-top: 20px;
+    gap: 15px;
+
+    max-height: 500px;
+}
+
+.taxonomy img {
+    height: 100%;
+    width: auto;
+}
+
+#milex {
+    text-decoration: none;
+    color: black;
+    
+}
+
+#milex:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: rgb(113, 133, 109);
+    color: beige;
+    font-size: small;
+    display: flex;
+    gap: 15px;
+}
+
+span {
+    color: blue;
+}

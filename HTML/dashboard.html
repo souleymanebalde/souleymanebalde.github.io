@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="../Resources/CSS/home.css">
+    <link rel="stylesheet" href="../Resources/CSS/dashboard.css">
+
+</head>
+<body>
+
+<header>
+    <!-- Logo -->
+    <div class="logo">
+        <a href="home.html"><img src="../Resources/Images/logo.png" alt="Logo"> </a>
+    </div>
+    <!-- Barre de navigation -->
+    <div class="navigation">
+    <nav>
+        <a href="home.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="documentation.html">Documentation</a>
+        <a href="login.html">Mon profil</a>
+    </nav>
+</div>
+</header>
+
+<main>
+    <section id="dashboard">
+        <h1>Bienvenue dans le Dashboard</h1>
+
+        <form id="vrp-form" action="results.html">
+            <!-- Étape 1 : Choix du problème -->
+            <fieldset>
+                <legend>Étape 1 : Choisissez le problème</legend>
+                <label for="problem-type">Problème :</label>
+                <select id="problem-type" name="problem-type" required>
+                    <option value="" disabled selected>-- Sélectionnez un problème --</option>
+                    <option value="CVRP">CVRP</option>
+                    <option value="VRPTW">VRPTW</option>
+                    <option value="DVRP">DVRP</option>
+                </select>
+                <div id="problem-parameters" class="hidden">
+                    <h3>Paramètres du problème :</h3>
+                    <div id="problem-parameters-list"></div>
+                </div>
+            </fieldset>
+
+            <!-- Étape 2 : Choix de la base de données -->
+            <fieldset class="hidden" id="database-section">
+                <legend>Étape 2 : Choisissez la base de données</legend>
+                <label for="database-type">Base de données :</label>
+                <select id="database-type" name="database-type" required>
+                    <option value="" disabled selected>-- Sélectionnez une base de données --</option>
+                    <option value="solomon">Solomon</option>
+                    <option value="cvrplib">CVRPLib</option>
+                    <option value="import">Importer les données</option>
+                </select>
+            </fieldset>
+
+            <!-- Étape 3 : Choix de la méthode -->
+            <fieldset class="hidden" id="method-section">
+                <legend>Étape 3 : Choisissez la méthode de résolution</legend>
+                <label for="method">Méthode :</label>
+                <select id="method" name="method" required>
+                    <option value="" disabled selected>-- Sélectionnez une méthode --</option>
+                    <option value="exact">Méthode exacte</option>
+                    <option value="metaheuristic">Métaheuristique</option>
+                </select>
+                <div id="method-parameters" class="hidden">
+                    <h3>Paramètres de la méthode :</h3>
+                    <div id="method-parameters-list"></div>
+                </div>
+            </fieldset>
+
+            <!-- Bouton de soumission -->
+            <button type="submit" id="submit-btn" class="btn hidden">Soumettre</button>
+        </form>
+    </section>
+
+</main>
+
+<script src="../Resources/JS/dashboard.js"></script>
+</body>
+</html>
